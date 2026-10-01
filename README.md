@@ -106,6 +106,14 @@ read from `.env` automatically; export the variables or use the CLI flags.
 
 The service-account key is gitignored (`.gitignore`) and must never be committed.
 
+## Data
+
+`extracted_texts.tsv` (or `.csv`) is generated OCR output and is **no longer
+tracked in git** — it is listed in `.gitignore` and stays on the machine that ran
+the extraction, because it can contain text from your documents. An existing
+local copy is left in place rather than deleted; delete it yourself when you no
+longer need it. The pre-overhaul copy is still recoverable from git history.
+
 ## Testing
 
 ```bash
