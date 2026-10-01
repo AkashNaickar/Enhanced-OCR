@@ -1,0 +1,9 @@
+# Test, lint and packaging dependencies.
+# Install with:  pip install -r requirements-dev.txt
+#
+# These are deliberately enough to run the whole test suite: the tests exercise
+# the pure helpers only and the GCP/ML imports are lazy, so no Google Cloud
+# credentials or heavy ML wheels are needed in CI.
+pytest>=7.4.0
+ruff>=0.4.0
+numpy>=1.24.0

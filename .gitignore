@@ -1,0 +1,42 @@
+# Local configuration and credentials -- never commit these
+.env
+.env.*
+!.env.example
+vision_ocr.json
+*service-account*.json
+service-account*.json
+*.pem
+*.key
+
+# Generated OCR output (may contain user document text)
+extracted_texts.tsv
+extracted_texts.csv
+
+# Sample inputs: keep the folder, ignore the images you drop in it
+image_folder/*
+!image_folder/.gitkeep
+
+# Model training output
+results_t5base/
+runs/
+*.ckpt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
