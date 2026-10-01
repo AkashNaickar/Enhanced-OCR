@@ -12,6 +12,6 @@ tqdm>=4.66.0
 torch>=2.0.0
 transformers>=4.35.0
 datasets>=2.14.0
-evaluate>=0.4.0
+evaluate>=0.4.6
 rouge-score>=0.1.2
 tensorboard>=2.13.0
